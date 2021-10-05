@@ -1,0 +1,144 @@
+//Part A
+package help;
+
+import java.util.Scanner;
+
+public class Hw3_a_reworked {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter number");
+
+
+		int number = input.nextInt ();
+	
+	input.close();
+		int a = number;
+		
+if(a>0) {
+	System.out.print("positive");
+}else if(a>=0) {
+	
+System.out.print("zero");
+
+}else {
+	System.out.print("negative");
+	
+}
+	}
+
+}
+
+
+//Part B
+package help;
+
+import java.util.Scanner;
+
+public class Hw3_b_reworked {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner input = new Scanner(System.in);
+		
+System.out.println("Enter number 1");
+
+
+int number1 = input.nextInt ();
+
+System.out.println("Enter number 2");
+
+
+int number2 = input.nextInt ();	
+
+
+System.out.println("Enter number 3");
+
+
+int number3 = input.nextInt ();
+		input.close();
+		
+		int a = number1;
+		int b = number2;
+		int c = number3;
+
+
+		if(a>b && a>c) {
+			System.out.println(a);
+		} else if(b>a && b>c) {
+			
+			
+			System.out.println(b);}
+			
+		else if(c>a && c>b) {
+			System.out.println(c);
+		}
+	}
+
+}
+
+
+//Part C
+package help;
+
+import java.util.Scanner;
+
+public class Hw3_c_reworked {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner input = new Scanner(System.in);
+		
+System.out.println("Enter day of the week");
+
+
+int number = input.nextInt ();
+
+		int week = number;
+		input.close();
+		
+		
+
+String weekString="";
+
+switch(week) {
+
+case 1: weekString= "1 - Sun";
+break;
+
+case 2: weekString= "2 - Mon";
+break;
+
+case 3: weekString= "3 - Tues";
+break;
+
+case 4: weekString= "4 - Wed";
+break;
+
+case 5: weekString= "5 - Thurs";
+break;
+
+case 6: weekString= "6 - Fri";
+break;
+
+case 7: weekString= "7 - Sat";
+break;
+
+	default:System.out.println("Invalid Week");
+}
+
+System.out.print(weekString);
+			
+
+	}
+
+}
